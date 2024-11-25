@@ -14,6 +14,42 @@ if (san1,san2) {
 }
     
 
-   
+function sandarTabu() {
+    let a = +prompt("Неше сан енгізесіз?");
+    if (!a || a <= 0) {
+        alert("Сан дұрыс енгізілген жоқ!");
+        return; }
+    let terys = 0, jup = 0, poo = 0;
+    for (let i = 0; i < a; i++) {
+        let san = +prompt(`Сан ${i + 1}-ші енгізіңіз:`);
+        if (san < 0) terys++; 
+        if (san % 2 === 0) jup++; 
+        else poo++; 
+    alert(`\n
+        Теріс сан  ${terys}
+        \n
+        Жұп сан ${jup}
+        \n
+        Тақ сан ${taq}`);}}
+sandarTabu();
+
+let sann =  50;
+
+ 
+function sandar(){
+    while(true){
+        let san = +prompt("Сан енгізіңіз: ")
+    if(sann == san){
+      alert("Керемет сіз санды таптыңыз!")
+    }else if(san < 0 || san > 100){
+        alert("Қүып кеттіңіз!")
+    }  else if (sann-5<=san && san<=sann+5 ){
+        alert(" Сіз жақындап қалдыңыз:  " )
+    }else{
+        alert("Сіз алыстап кеттіңіз! ")
+    }
+    }}
+sandar();
+
 
  
