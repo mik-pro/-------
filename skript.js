@@ -27,9 +27,7 @@ function sandarTabu() {
         else poo++; 
     alert(`\n
         Теріс сан  ${terys}
-        \n
-        Жұп сан ${jup}
-        \n
+         Жұп сан ${jup}
         Тақ сан ${taq}`);}}
 sandarTabu();
 
@@ -40,9 +38,9 @@ function sandar(){
     while(true){
         let san = +prompt("Сан енгізіңіз: ")
     if(sann == san){
-      alert("Керемет сіз санды таптыңыз!")
+      alert("сан тандадын!")
     }else if(san < 0 || san > 100){
-        alert("Қүып кеттіңіз!")
+        alert("дурыс емес!")
     }  else if (sann-5<=san && san<=sann+5 ){
         alert(" Сіз жақындап қалдыңыз:  " )
     }else{
